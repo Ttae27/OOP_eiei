@@ -1,0 +1,17 @@
+To delete a remote branch in Git, you can use the git push command with the --delete or -d option,
+followed by the name of the remote branch you want to delete.
+
+Here's the syntax for deleting a remote branch:
+    git push <remote-name> --delete <branch-name>
+
+In this command, <remote-name> is the name of the remote repository you want to delete the branch from (e.g. origin), 
+and <branch-name> is the name of the branch you want to delete.
+
+For example, if you want to delete the feature-branch remote branch from the origin remote repository, you can run the following command
+    git push origin --delete feature-branch
+
+Once you run this command, Git will delete the specified branch from the remote repository,
+and it will no longer be visible in the list of remote branches when you run git branch -r.
+Note that this command only deletes the remote branch and does not affect any local branches.
+If you have a local branch that tracks the deleted remote branch,
+you may want to delete it as well using the git branch -d command.
