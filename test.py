@@ -1,2 +1,0 @@
-print('kuy')
-print('kuyraisas')
